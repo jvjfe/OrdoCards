@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Interativas</title>
+    <style>
+        #container {
+            text-align: center;
+        }
+
+        #imagem {
+            display: inline-block;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="container">
+        <img id="imagem" src="9.gif" alt="Imagem" onclick="trocarImagem(event)">
+    </div>
+
+    <script>
+        function trocarImagem(event) {
+            var imgElement = document.getElementById('imagem');
+            var clickX = event.clientX - imgElement.offsetLeft; // Posição X do clique em relação à imagem
+
+            if (clickX < imgElement.width / 3) {
+                imgElement.src = '7.png'; // Clique à esquerda
+            } else if (clickX > imgElement.width * 2 / 3) {
+                imgElement.src = '8.png'; // Clique à direita
+            } else {
+                imgElement.src = '9.gif'; // Clique no meio
+            }
+        }
+    </script>
+
+</body>
+
+</html>

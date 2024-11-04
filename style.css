@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:ital,opsz,wght@0,6..12,200,1000,1,6,12,200..1000&display=swap');
 
+/* Estilo da barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px; /* Largura da barra de rolagem */
+}
+
+/* Estilo da pista da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: rgba(206, 206, 206, 0.1); /* Fundo da pista */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo do polegar da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2); /* Cor do polegar */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+/* Estilo do polegar quando em foco */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.7); /* Cor do polegar ao passar o mouse */
+}
+
 * {
     /* Define o box-sizing como border-box para todos os elementos */
     box-sizing: border-box;
@@ -24,7 +46,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
 }
 
 .container {
@@ -52,7 +73,6 @@ body {
 
 
 .card-Deus {
-    /* Adiciona padding no topo do card */
     padding-top: 100px;
     /* Mantém o estilo 3D */
     transform-style: preserve-3d;
@@ -95,23 +115,16 @@ body {
 }
 
 .card-Anfi {
-    /* Adiciona padding no topo do card */
     padding-top: 100px;
-    /* Mantém o estilo 3D */
     transform-style: preserve-3d;
-    /* Define a imagem de fundo do card */
-    background-image: url("9.gif"); 
+    background-image: url("9.gif");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto 420px;
-    /* Define a posição da imagem de fundo */
     background-position: center center;
-    /* Define a largura do card */
     width: 100%;
     height: 110%;
-    /* Adiciona uma transição suave */
     transition: all 0.5s ease-in-out;
-    /* Adiciona bordas arredondadas */
     border-radius: 10px;
 }
 
@@ -121,14 +134,12 @@ body {
     /* Mantém o estilo 3D */
     transform-style: preserve-3d;
     /* Define a imagem de fundo do card */
-    background-image: url("10.png");
+    background-image: url("12.gif");
     background-repeat: no-repeat;
-    background-position: center center;
-    background-size: auto 900px;
-    /* Define a posição da imagem de fundo */
-    ;
-    background-position: center center;
-    /* Define a largura do card */
+    /* A posição da imagem de fundo foi ajustada para exibir a parte esquerda */
+    background-position: left right; /* Exibe a parte esquerda do GIF */
+    background-size: 500px 400px; /* Ajusta o tamanho da imagem */
+    /* Define a largura e altura do card */
     width: 100%;
     height: 110%;
     /* Adiciona uma transição suave */
@@ -136,6 +147,7 @@ body {
     /* Adiciona bordas arredondadas */
     border-radius: 10px;
 }
+
 
 .card-liz {
     /* Adiciona padding no topo do card */
@@ -164,7 +176,7 @@ body {
     /* Mantém o estilo 3D */
     transform-style: preserve-3d;
     /* Define a imagem de fundo do card */
-    background-image: url("16.png"); 
+    background-image: url("16.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto 500px;
@@ -182,44 +194,43 @@ body {
 
 .card-Deus:hover {
     /* Muda a posição da imagem de fundo no hover */
-       background-position: 80% 20%;
+    background-position: 80% 20%;
     /* Rotaciona o card no hover */
-     transform: rotate3d(1, 1, 0, 30deg);
+    transform: rotate3d(1, 1, 0, 30deg);
 }
 
 .card-Magi:hover {
     /* Muda a posição da imagem de fundo no hover */
     background-position: 80% 20%;
     /* Rotaciona o card no hover */
-     transform: rotate3d(0.5, 0, 0, 30deg);
+    transform: rotate3d(0.5, 0, 0, 30deg);
 }
 
 .card-Anfi:hover {
-    /* Muda a posição da imagem de fundo no hover */
     background-position: 80% 20%;
     /* Rotaciona o card no hover */
-     transform: rotate3d(1, -1, 0, 30deg);
+    transform: rotate3d(1, -1, 0, 30deg);
 }
 
 .card-dante:hover {
     /* Muda a posição da imagem de fundo no hover */
-       background-position: 80% 20%;
+    background-position: 80% 20%;
     /* Rotaciona o card no hover */
-     transform: rotate3d(1, 1, 0, 30deg);
+    transform: rotate3d(0.1, 0.1, 0, 30deg);
 }
 
 .card-liz:hover {
     /* Muda a posição da imagem de fundo no hover */
     background-position: 80% 20%;
     /* Rotaciona o card no hover */
-     transform: rotate3d(0.5, 0, 0, 30deg);
+    transform: rotate3d(0.5, 0, 0, 30deg);
 }
 
 .card-thiago:hover {
     /* Muda a posição da imagem de fundo no hover */
     background-position: 80% 20%;
     /* Rotaciona o card no hover */
-     transform: rotate3d(1, -1, 0, 30deg);
+    transform: rotate3d(1, -1, 0, 30deg);
 }
 
 .conteudo-box-1 {
@@ -384,6 +395,7 @@ body {
     /* Aumenta a transformação no eixo Z no hover */
     transform: translate3d(0px, 0px, 50px);
 }
+
 .conteudo-card3 {
     /* Adiciona padding no topo do conteúdo do card */
     padding-top: 20px;
@@ -403,6 +415,7 @@ body {
     /* Aumenta a transformação no eixo Z no hover */
     transform: translate3d(0px, 0px, 50px);
 }
+
 .veja-mais-1 {
     /* Define o display como block */
     display: block;
@@ -539,18 +552,22 @@ body {
     /* Aumenta a transformação no eixo Z no hover */
     transform: translate3d(0px, 0px, 50px);
 }
+
 .veja-mais-4:hover {
     /* Aumenta a transformação no eixo Z no hover */
     transform: translate3d(0px, 0px, 50px);
 }
+
 .veja-mais-5:hover {
     /* Aumenta a transformação no eixo Z no hover */
     transform: translate3d(0px, 0px, 50px);
 }
+
 .veja-mais-6:hover {
     /* Aumenta a transformação no eixo Z no hover */
     transform: translate3d(0px, 0px, 50px);
 }
+
 /* Aplica um filtro de rotação de matiz de 150 graus à card2 */
 .card2 {
     filter: hue-rotate (150deg);

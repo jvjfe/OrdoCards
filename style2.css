@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:ital,opsz,wght@0,6..12,200,1000,1,6,12,200..1000&display=swap');
+
+* {
+    /* Define o box-sizing como border-box para todos os elementos */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* Define a fonte padrão para todos os elementos */
+    font-family: "Nunito Sans", sans-serif;
+    /* Define o dimensionamento óptico da fonte */
+    font-optical-sizing: auto;
+    /* Define o peso da fonte */
+    font-weight: 500;
+    /* Define o estilo da fonte */
+    font-style: normal;
+    /* Configurações de variação da fonte */
+    font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+body {
+    background: rgb(20, 20, 20);
+    padding: 0 50px;
+}
+
+.container {
+    /* Adiciona padding à container */
+    padding: 50px 50px;
+    /* Define a altura da container */
+    height: 100vh;
+    /* Usa flexbox para alinhar e justificar o conteúdo */
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.principal {
+    /* Define a altura e largura do elemento principal */
+    height: 400px;
+    width: 300px;
+    /* Adiciona padding ao principal */
+    padding: 20px;
+    /* Define a perspectiva para o elemento */
+    perspective: 10000px;
+}
+
+.card-Deus {
+    /* Adiciona padding no topo do card */
+    padding-top: 100px;
+    /* Mantém o estilo 3D */
+    transform-style: preserve-3d;
+    /* Define a imagem de fundo do card */
+    background-image: url("DEUS\ DO\ WHATSAPP.jpg");
+    /* Define a posição da imagem de fundo */
+    background-position: center center;
+    /* Define a largura do card */
+    width: 100%;
+    height: 115%;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Adiciona bordas arredondadas */
+    border-radius: 10px;
+}
+.card-Magi {
+    /* Adiciona padding no topo do card */
+    padding-top: 100px;
+    /* Mantém o estilo 3D */
+    transform-style: preserve-3d;
+    /* Define a imagem de fundo do card */
+    background-image: url("Magistrada-2.png");
+    /* Define a posição da imagem de fundo */
+    background-position: center center;
+    /* Define a largura do card */
+    width: 100%;
+    height: 115%;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Adiciona bordas arredondadas */
+    border-radius: 10px;
+}
+.card-Anfi {
+    /* Adiciona padding no topo do card */
+    padding-top: 100px;
+    /* Mantém o estilo 3D */
+    transform-style: preserve-3d;
+    /* Define a imagem de fundo do card */
+    background-image: url("ANFITRAS.jpg");
+    /* Define a posição da imagem de fundo */
+    background-position: center center;
+    /* Define a largura do card */
+    width: 100%;
+    height: 115%;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Adiciona bordas arredondadas */
+    border-radius: 10px;
+}
+.card-Dai {
+    /* Adiciona padding no topo do card */
+    padding-top: 100px;
+    /* Mantém o estilo 3D */
+    transform-style: preserve-3d;
+    /* Define a imagem de fundo do card */
+    background-image: url("DAIBO.png");
+    /* Define a posição da imagem de fundo */
+    background-position: center center;
+    /* Define a largura do card */
+    width: 100%;
+    height: 115%;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Adiciona bordas arredondadas */
+    border-radius: 10px;
+}
+
+.card-Deus:hover {
+    /* Muda a posição da imagem de fundo no hover */
+    background-position: 80% 20%;
+    /* Rotaciona o card no hover */
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+.card-Magi:hover {
+    /* Muda a posição da imagem de fundo no hover */
+    background-position: 80% 20%;
+    /* Rotaciona o card no hover */
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+.card-Anfi:hover {
+    /* Muda a posição da imagem de fundo no hover */
+    background-position: 80% 20%;
+    /* Rotaciona o card no hover */
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+.card-Dai:hover {
+    /* Muda a posição da imagem de fundo no hover */
+    background-position: 80% 20%;
+    /* Rotaciona o card no hover */
+    transform: rotate3d(0.5, 1, 0, 30deg);
+}
+
+.conteudo-box-1 {
+    /* Define a altura e largura do conteudo-box */
+    height: 100%;
+    width: 100%;
+    /* Define a cor de fundo com transparência */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adiciona bordas arredondadas ao conteudo-box */
+    border-radius: 0px 0px 10px 10px;
+    /* Adiciona uma sombra */
+    box-shadow: rgba(255, 255, 255, 0.925) 0px 20px 50px -25px;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Adiciona padding ao conteudo-box */
+    padding: 50px 25px 25px 25px;
+    /* Mantém o estilo 3D */
+    transform-style: preserve-3d;
+}
+.conteudo-box-2 {
+    /* Define a altura e largura do conteudo-box */
+    height: 100%;
+    width: 100%;
+    /* Define a cor de fundo com transparência */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adiciona bordas arredondadas ao conteudo-box */
+    border-radius: 0px 0px 10px 10px;
+    /* Adiciona uma sombra */
+    box-shadow: rgba(255, 230, 0, 0.925) 0px 20px 50px -25px;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Adiciona padding ao conteudo-box */
+    padding: 50px 25px 25px 25px;
+    /* Mantém o estilo 3D */
+    transform-style: preserve-3d;
+}
+.conteudo-box-3 {
+    /* Define a altura e largura do conteudo-box */
+    height: 100%;
+    width: 100%;
+    /* Define a cor de fundo com transparência */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adiciona bordas arredondadas ao conteudo-box */
+    border-radius: 0px 0px 10px 10px;
+    /* Adiciona uma sombra */
+    box-shadow: rgba(212, 0, 255, 0.925) 0px 20px 50px -25px;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Adiciona padding ao conteudo-box */
+    padding: 50px 25px 25px 25px;
+    /* Mantém o estilo 3D */
+    transform-style: preserve-3d;
+}
+.conteudo-box-4 {
+    /* Define a altura e largura do conteudo-box */
+    height: 100%;
+    width: 100%;
+    /* Define a cor de fundo com transparência */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adiciona bordas arredondadas ao conteudo-box */
+    border-radius: 0px 0px 10px 10px;
+    /* Adiciona uma sombra */
+    box-shadow: rgba(255, 0, 0, 0.925) 0px 20px 50px -25px;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Adiciona padding ao conteudo-box */
+    padding: 50px 25px 25px 25px;
+    /* Mantém o estilo 3D */
+    transform-style: preserve-3d;
+}
+
+.card-titulo {
+    /* Define a cor do título */
+    color: white;
+    /* Define o tamanho da fonte do título */
+    font-size: 25px;
+    /* Define o peso da fonte do título */
+    font-weight: 900;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Transforma a posição do título no eixo Z */
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.card-titulo:hover {
+    /* Aumenta a transformação no eixo Z no hover */
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.conteudo-card {
+    /* Adiciona padding no topo do conteúdo do card */
+    padding-top: 15px;
+    /* Define o tamanho da fonte do conteúdo */
+    font-size: 12px;
+    /* Define a cor do texto */
+    color: rgb(185, 185, 185);
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Transforma a posição do conteúdo no eixo Z */
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.conteudo-card:hover {
+    /* Aumenta a transformação no eixo Z no hover */
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.veja-mais-1 {
+    /* Define o display como block */
+    display: block;
+    /* Define o tamanho da fonte */
+    font-size: 11px;
+    /* Define o peso da fonte */
+    font-weight: 900;
+    /* Define o texto em maiúsculas */
+    text-transform: uppercase;
+    /* Define a cor do texto */
+    color: rgb(255, 255, 255);
+    /* Adiciona padding no topo */
+    padding-top: 15px;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Transforma a posição do texto no eixo Z */
+    transform: translate3d(0px, 0px, 20px);
+}
+.veja-mais-2 {
+    /* Define o display como block */
+    display: block;
+    /* Define o tamanho da fonte */
+    font-size: 11px;
+    /* Define o peso da fonte */
+    font-weight: 900;
+    /* Define o texto em maiúsculas */
+    text-transform: uppercase;
+    /* Define a cor do texto */
+    color: rgb(255, 238, 0);
+    /* Adiciona padding no topo */
+    padding-top: 15px;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Transforma a posição do texto no eixo Z */
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.veja-mais-3 {
+    /* Define o display como block */
+    display: block;
+    /* Define o tamanho da fonte */
+    font-size: 11px;
+    /* Define o peso da fonte */
+    font-weight: 900;
+    /* Define o texto em maiúsculas */
+    text-transform: uppercase;
+    /* Define a cor do texto */
+    color: rgb(183, 0, 255);
+    /* Adiciona padding no topo */
+    padding-top: 15px;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Transforma a posição do texto no eixo Z */
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.veja-mais-4 {
+    /* Define o display como block */
+    display: block;
+    /* Define o tamanho da fonte */
+    font-size: 11px;
+    /* Define o peso da fonte */
+    font-weight: 900;
+    /* Define o texto em maiúsculas */
+    text-transform: uppercase;
+    /* Define a cor do texto */
+    color: rgb(255, 0, 0);
+    /* Adiciona padding no topo */
+    padding-top: 15px;
+    /* Adiciona uma transição suave */
+    transition: all 0.5s ease-in-out;
+    /* Transforma a posição do texto no eixo Z */
+    transform: translate3d(0px, 0px, 20px);
+}
+
+
+.veja-mais-1:hover {
+    /* Aumenta a transformação no eixo Z no hover */
+    transform: translate3d(0px, 0px, 50px);
+}
+.veja-mais-2:hover {
+    /* Aumenta a transformação no eixo Z no hover */
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.veja-mais-3:hover {
+    /* Aumenta a transformação no eixo Z no hover */
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.veja-mais-4:hover {
+    /* Aumenta a transformação no eixo Z no hover */
+    transform: translate3d(0px, 0px, 50px);
+}
+
+
+.data-box {
+    /* Define a posição absoluta da data-box */
+    position: absolute;
+    /* Define a posição da data-box no topo */
+    top: 75px;
+    /* Define a posição da data-box à esquerda */
+    left: 25px;
+    /* Define a altura e largura da data-box */
+    height: 55px;
+    width: 140px;
+    /* Define a cor de fundo */
+    background-color: rgb(0, 0, 0, 0.8);
+    /* Adiciona bordas arredondadas */
+    border-radius: 10px;
+    /* Adiciona padding à data-box */
+    padding: 10px;
+    /* Adiciona uma sombra */
+    box-shadow: rgb(0, 102, 255) 0px 20px 60px 0px rgb(0.200.255);
+    /* Transforma a posição da data-box no eixo Z */
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.data-box span {
+    /* Define o display como block */
+    display: block;
+    /* Alinha o texto ao centro */
+    text-align: center;
+}
+
+.data-box .mes-box {
+    /* Define a cor do texto */
+    color: white;
+    /* Define o tamanho da fonte */
+    font-size: 11px;
+    /* Define o peso da fonte */
+    font-weight: 700;
+}
+
+.data-box .dia-box {
+    /* Define o tamanho da fonte */
+    font-size: 20px;
+    /* Define o peso da fonte */
+    font-weight: 900;
+    /* Define a cor do texto */
+    color: white;
+}
+
+/* Aplica um filtro de rotação de matiz de 150 graus à card2 */
+.card2 {
+    filter: hue-rotate (150deg);
+}
+
+/* Aplica um filtro de rotação de matiz de 300 graus à card3 */
+.card3 {
+    filter: hue-rotate (300deg);
+}
+
+/* Aplica um filtro de rotação de matiz de 90 graus à card4 */
+.card4 {
+    filter: hue-rotate (90deg);
+}

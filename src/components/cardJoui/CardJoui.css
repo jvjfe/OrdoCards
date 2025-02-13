@@ -1,0 +1,90 @@
+.card-Joui {
+    padding-top: 100px;
+    transform-style: preserve-3d;
+    /* background-image: url("../../img/6.gif"); */
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background-size: auto 420px; */
+    background-position: center center;
+    width: 100%;
+    height: 110%;
+    transition: all 0.5s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-Joui:hover {
+    background-position: 80% 20%;
+    transform: rotate3d(0.5, 0, 0, 30deg);
+}
+
+.conteudo-box-2 {
+    height: 100%;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+    transition: all 0.5s ease-in-out;
+    padding: 40px 25px 25px 25px;
+    transform-style: preserve-3d;
+    animation: neonJoui 1.5s infinite alternate;
+}
+
+@keyframes neonJoui {
+    0% {
+        box-shadow: rgba(255, 230, 0, 0.925) 0px 55px 90px -25px;
+    }
+
+    50% {
+        box-shadow: rgba(255, 230, 0, 0.925) 0px 55px 60px -25px;
+    }
+
+    100% {
+        box-shadow: rgba(255, 230, 0, 0.925) 0px 55px 40px -25px;
+    }
+}
+
+
+.card-titulo {
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 120px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.card-titulo:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.conteudo-card2:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.conteudo-card2 {
+    padding-top: 20px;
+    text-align: center;
+    font-size: 21px;
+    color: rgb(185, 185, 185);
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.veja-mais-2 {
+    display: block;
+    font-size: 11px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: rgb(255, 238, 0);
+    padding-top: 25px;
+    text-align: center;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+}
+
+.veja-mais-2:hover {
+    transform: translate3d(0px, 0px, 50px);
+}
+
+.card2 {
+    filter: hue-rotate (150deg);
+}

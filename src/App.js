@@ -2,11 +2,13 @@ import React, { useEffect } from "react";
 import CardJoui from "../src/components/cardJoui/CardJoui.js";
 import CardArthur from "./components/cardArthur/CardArthur.js";
 import CardKaiser from "./components/cardKaiser/CardKaiser.js";
+import CardDante from "./components/cardDante/CardDante.js";
 import './index.css';
 import wallpaper1 from './img/wallpaper1.jpg';
 import wallpaper2 from './img/wallpaper2.jpg';
 import wallpaper3 from './img/wallpaper3.jpg';
 import wallpaper4 from './img/wallpaper4.jpg';
+
 
 function App() {
   useEffect(() => {
@@ -24,6 +26,7 @@ function App() {
         <CardArthur />
         <CardJoui />
         <CardKaiser />
+        <CardDante />
       </div>
     </div>
   );

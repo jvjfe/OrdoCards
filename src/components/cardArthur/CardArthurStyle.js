@@ -1,53 +1,53 @@
-import styled, { keyframes } from "styled-components";
+import styled, { keyframes } from 'styled-components';
 
-// Efeito neon para o contêiner (box-shadow dourado)
-const neonBoxPulseJoui = keyframes`
+// Animação de brilho para CONTAINER (box-shadow)
+const neonBoxPulseArthur = keyframes`
   0% {
     box-shadow:
-      0 0 10px rgba(255, 220, 50, 0.4),
-      0 0 20px rgba(255, 220, 50, 0.6),
-      0 0 30px rgba(255, 230, 90, 0.7),
-      0 0 40px rgba(255, 240, 100, 0.9);
+      0 0 10px rgba(255, 0, 0, 0.4),
+      0 0 20px rgba(255, 0, 0, 0.6),
+      0 0 30px rgba(255, 0, 0, 0.7),
+      0 0 40px rgba(255, 0, 0, 0.9);
   }
   50% {
     box-shadow:
-      0 0 20px rgba(255, 230, 90, 0.6),
-      0 0 30px rgba(255, 240, 100, 0.8),
-      0 0 40px rgba(255, 250, 120, 1),
-      0 0 50px rgba(255, 255, 150, 1);
+      0 0 20px rgba(255, 0, 0, 0.6),
+      0 0 30px rgba(255, 0, 0, 0.8),
+      0 0 40px rgba(255, 0, 0, 1),
+      0 0 50px rgba(255, 0, 0, 1);
   }
   100% {
     box-shadow:
-      0 0 10px rgba(255, 220, 50, 0.4),
-      0 0 20px rgba(255, 220, 50, 0.6),
-      0 0 30px rgba(255, 230, 90, 0.7),
-      0 0 40px rgba(255, 240, 100, 0.9);
+      0 0 10px rgba(255, 0, 0, 0.4),
+      0 0 20px rgba(255, 0, 0, 0.6),
+      0 0 30px rgba(255, 0, 0, 0.7),
+      0 0 40px rgba(255, 0, 0, 0.9);
   }
 `;
 
-// Efeito neon para texto (text-shadow dourado)
-const neonTextPulseJoui = keyframes`
+// Animação de brilho para TEXTO (text-shadow)
+const neonTextPulseArthur = keyframes`
   0% {
     text-shadow:
-      0 0 12px rgba(255, 196, 20, 0.6),
-      0 0 20px rgba(255, 228, 56, 0.8),
-      0 0 30px rgba(255, 247, 27, 0.9);
+      0 0 8px rgba(255, 50, 50, 0.6),
+      0 0 15px rgba(255, 100, 100, 0.8),
+      0 0 25px rgba(255, 0, 0, 1);
   }
   50% {
     text-shadow:
-      0 0 25px rgba(255, 228, 56, 0.8),
-      0 0 40px rgba(255, 196, 20, 0.9),
-      0 0 50px rgba(255, 199, 32, 1);
+      0 0 15px rgba(255, 0, 0, 0.8),
+      0 0 25px rgba(255, 0, 0, 1),
+      0 0 35px rgba(255, 0, 0, 1);
   }
   100% {
     text-shadow:
-      0 0 12px rgba(255, 196, 20, 0.6),
-      0 0 30px rgba(255, 247, 27, 0.9),
-      0 0 40px rgba(255, 228, 56, 0.8);
+      0 0 8px rgba(255, 50, 50, 0.6),
+      0 0 15px rgba(255, 100, 100, 0.8),
+      0 0 25px rgba(255, 0, 0, 1);
   }
 `;
 
-export const CardJouiContainer = styled.div`
+export const CardArthurContainer = styled.div`
   width: 290px;
   height: 400px;
   border-radius: 15px;
@@ -56,7 +56,7 @@ export const CardJouiContainer = styled.div`
   background-size: cover;
   transition: transform 0.6s ease;
   transform-style: preserve-3d;
-  animation: ${neonBoxPulseJoui} 1.5s infinite;
+  animation: ${neonBoxPulseArthur} 1.5s infinite;
   cursor: default;
 `;
 
@@ -78,13 +78,13 @@ export const ConteudoBox = styled.div`
 `;
 
 export const ConteudoCard = styled.div`
- text-align: center;
+  text-align: center;
   font-size: 20px;
   font-weight: bold;
   color: #e6ccff;
   margin-bottom: 8px;
   transition: transform 0.4s ease, text-shadow 0.4s ease 0.2s;
-  animation: ${neonTextPulseJoui} 2s infinite;
+  animation: ${neonTextPulseArthur} 2s infinite;
   width: auto; /* Ajuste de largura */
   height: auto; /* Ajuste de altura */
   padding: 0;
@@ -99,10 +99,10 @@ export const VejaMais = styled.div`
   font-size: 12px;
   font-weight: 900;
   text-transform: uppercase;
-  color: #fff200;
+  color:rgb(255, 0, 0);
   text-align: center;
   transition: transform 0.4s ease, text-shadow 0.4s ease 0.2s;
-  animation: ${neonTextPulseJoui} 1.2s infinite alternate;
+  animation: ${neonTextPulseArthur} 1.2s infinite alternate;
   width: auto; /* Ajuste de largura */
   padding: 5px 10px;
   box-sizing: content-box;

@@ -1,53 +1,76 @@
 import React, { useState } from 'react';
-import './CardArthur.css';
+import './CardArthur.css';  // Você pode criar o arquivo CSS com os estilos do Arthur
+import { ConteudoBox, ConteudoCard, VejaMais } from './CardArthurStyle'; // Defina os estilos para o Arthur
+import Card from '../card/Card';
 
-import img5 from '../../img/1.jpg';
-import img6 from '../../img/3.gif';
-import img4 from '../../img/2.jpg';
+import img1 from '../../img/1.jpg';  // Substitua com a imagem real
+import img2 from '../../img/3.gif'; // Substitua com a imagem real
+import img3 from '../../img/2.jpg'; // Substitua com a imagem real
 
-import { trocarImagem } from '../../util/util';
-
-function CardJoui() {
-
-    const params = {
-        esquerda: {
+function CardArthur() {
+    const imagens = [
+        {
             estilo: {
-                backgroundImage: `url(${img5})`,
-                backgroundSize: "120%"
+                backgroundImage: `url(${img1})`,
+                backgroundSize: '120%',
             },
-            descricao: '(Segredo na Floresta)'
+            descricao: '(Segredo na Floresta)',
         },
-        centro: {
+        {
             estilo: {
-                backgroundImage: `url(${img6})`,
-                backgroundSize: "auto 420px"
+                backgroundImage: `url(${img2})`,
+                backgroundSize: 'auto 420px',
             },
-            descricao: '(Calamidade)'
+            descricao: '(Desconjuração Final)',
         },
-        direita: {
+        {
             estilo: {
-                backgroundImage: `url(${img4})`,
-                backgroundSize: "120%"
+                backgroundImage: `url(${img3})`,
+                backgroundSize: '120%',
             },
-            descricao: '(Desconjuração)'
-        }
-    }
+            descricao: '(Desconjuração Início)',
+        },
+    ];
 
-    const [est, setEst] = useState(params.centro.estilo);
-    const [desc, setDesc] = useState(params.centro.descricao);
+    const [index, setIndex] = useState(1);
+    const [fade, setFade] = useState(false);
 
-    params.setEstilo = setEst;
-    params.setDesc = setDesc;
+    const trocarImagem = (novoIndex) => {
+        setFade(true);
+        setTimeout(() => {
+            setIndex(novoIndex);
+            setFade(false);
+        }, 300); // tempo de fade
+    };
+
+    const anterior = () => {
+        const novo = index === 0 ? imagens.length - 1 : index - 1;
+        trocarImagem(novo);
+    };
+
+    const proximo = () => {
+        const novo = index === imagens.length - 1 ? 0 : index + 1;
+        trocarImagem(novo);
+    };
 
     return (
-        <div className="card-Joui" style={est} id="card" onClick={(e) => trocarImagem(e, params)}>
-            <div className="conteudo-box-2">
-                <h1 className="card-titulo">Joui</h1>
-                <p className="conteudo-card2">{desc}</p>
-                <span className="veja-mais-2">Veja mais</span>
+        <div className="card-container">
+            <div className={`card-arthur ${fade ? 'fade-out' : ''}`} style={imagens[index].estilo}>
+                <Card
+                    titulo="Arthur Cervero"
+                    desc={imagens[index].descricao}
+                    conteudoBox={ConteudoBox}
+                    conteudoCard={ConteudoCard}
+                    vejaMais={VejaMais}
+                />
+            </div>
+
+            <div className="controls">
+                <button onClick={anterior}>⬅️</button>
+                <button onClick={proximo}>➡️</button>
             </div>
         </div>
     );
 }
 
-export default CardJoui;
+export default CardArthur;

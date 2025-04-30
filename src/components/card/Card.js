@@ -1,13 +1,12 @@
 import React from 'react';
 import './Card.css';
 
-function Card({ titulo, desc, conteudoBox, conteudoCard, vejaMais }) {
+function Card({ titulo, desc, conteudoBox: Box, conteudoCard: CardText, vejaMais: VejaMais }) {
     return (
-        <div style={conteudoBox}>
-            <h1 className="card-titulo">{titulo}</h1>
-            <p style={conteudoCard}>{desc}</p>
-            <span style={vejaMais}>Veja mais</span>
-        </div>
+        <Box>
+            <CardText>{titulo}</CardText>
+            <VejaMais>{desc}</VejaMais>
+        </Box>
     );
 }
 

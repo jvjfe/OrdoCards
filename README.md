@@ -14,17 +14,17 @@ Atualmente, o projeto inclui os seguintes personagens:
 - Arthur Cervero
 - Joui Jouki
 - Kaiser (Cesar Cohen)
-- Elizabeth Webber
-- Thiago Fritz
+- Elizabeth Webber // AINDA NÃO ADICIONADO
+- Thiago Fritz // AINDA NÃO ADICIONADO
 - Dante
-- Anfitrião
-- Deus da Morte
+- Anfitrião // AINDA NÃO ADICIONADO
+- Deus da Morte // AINDA NÃO ADICIONADO
 
 Mais personagens serão adicionados assim que o processo de componentização for finalizado.
 
 ## Tecnologias Utilizadas
 
-- **HTML** - Estruturação do conteúdo.
+- **HTML** - Estruturação do conteúdo. (HTML está sendo removido aos poucos da página, será trocado pelo React com Styled Components.)
 - **CSS** - Estilização e efeitos visuais.
 - **JavaScript** - Lógica e interação.
 - **React** - Componentização da interface e melhorias de performance.

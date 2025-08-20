@@ -33,7 +33,7 @@ Mais personagens serão adicionados assim que o processo de componentização fo
 
 1. Clone este repositório em sua máquina local:
    ```bash
-   git clone https://github.com/jvjfe/OrdemParanormalCards2.0.git
+   git clone https://github.com/jvjfe/OrdoCards.git
    ```
 
 2. Navegue até a pasta do projeto:

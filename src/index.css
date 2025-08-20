@@ -1,4 +1,7 @@
-* {
+/* Reset básico */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -11,19 +14,73 @@ body {
   background-attachment: fixed;
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
+  color: #fff;
+  /* fundo escuro → textos claros */
 }
 
+html {
+  scroll-behavior: smooth;
+  /* rolagem suave ao clicar nos links do header */
+}
+
+/* Container principal do app */
 .App {
-  padding: 40px;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  /* empilha header → main → footer */
+  padding: 0;
+  /* o padding geral vamos aplicar nos conteúdos, não aqui */
 }
 
+/* Área de conteúdo, ocupa o espaço entre header e footer */
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+/* Grid de cartas */
 .card-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: center;
   max-width: 1900px;
-  /* antes estava 1000px */
+  margin: 0 auto;
+  /* centraliza */
+}
+
+/* Seção "Sobre" com contraste */
+.sobre-bloco {
+  margin-top: 48px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.sobre-bloco h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #ffcc00;
+}
+
+.sobre-bloco p {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.sobre-bloco a {
+  color: #ffcc00;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.sobre-bloco a:hover {
+  text-decoration: underline;
 }

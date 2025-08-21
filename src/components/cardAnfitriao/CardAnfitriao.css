@@ -4,10 +4,9 @@
     align-items: center;
     padding: 30px;
     perspective: 1000px;
-    /* ativa o efeito 3D */
 }
 
-.card-arthur {
+.card-anfitriao {
     width: 260px;
     height: 400px;
     overflow: hidden;
@@ -17,11 +16,9 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 0px 25px rgba(255, 0, 0, 0.6);
-    /* vermelho neon */
+    box-shadow: 0px 0px 25px rgba(150, 0, 200, 0.6);
     cursor: default;
 
-    /* transições unificadas */
     transition:
         transform 0.6s ease,
         box-shadow 0.6s ease,
@@ -31,21 +28,19 @@
     opacity: 1;
 }
 
-.card-arthur.fade-out {
+.card-anfitriao.fade-out {
     opacity: 0;
 }
 
-.card-arthur:hover {
+.card-anfitriao:hover {
     transform: rotateY(8deg) rotateX(3deg) scale(1.05);
-    /* glow colorido no hover */
     box-shadow:
-        0 0 15px rgba(255, 50, 50, 0.8),
-        0 0 30px rgba(255, 0, 0, 0.7),
-        0 0 50px rgba(255, 100, 100, 0.9),
-        0 0 70px rgba(255, 0, 50, 0.9);
+        0 0 15px rgba(200, 0, 255, 0.8),
+        0 0 30px rgba(0, 255, 180, 0.7),
+        0 0 50px rgba(100, 100, 255, 0.9),
+        0 0 70px rgba(255, 0, 150, 0.9);
 }
 
-/* Botões de controle */
 .controls {
     display: flex;
     justify-content: center;

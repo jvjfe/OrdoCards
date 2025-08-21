@@ -1,4 +1,3 @@
-/* Reset básico */
 *,
 *::before,
 *::after {
@@ -15,31 +14,25 @@ body {
   background-repeat: no-repeat;
   font-family: Arial, sans-serif;
   color: #fff;
-  /* fundo escuro → textos claros */
+  background-color: black;
 }
 
 html {
   scroll-behavior: smooth;
-  /* rolagem suave ao clicar nos links do header */
 }
 
-/* Container principal do app */
 .App {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  /* empilha header → main → footer */
   padding: 0;
-  /* o padding geral vamos aplicar nos conteúdos, não aqui */
 }
 
-/* Área de conteúdo, ocupa o espaço entre header e footer */
 .content {
   flex: 1;
   padding: 40px;
 }
 
-/* Grid de cartas */
 .card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -47,10 +40,8 @@ html {
   justify-content: center;
   max-width: 1900px;
   margin: 0 auto;
-  /* centraliza */
 }
 
-/* Seção "Sobre" com contraste */
 .sobre-bloco {
   margin-top: 48px;
   padding: 40px;

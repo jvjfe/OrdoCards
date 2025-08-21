@@ -21,8 +21,8 @@ function CardDante() {
         {
             estilo: {
                 backgroundImage: `url(${img2})`,
-                backgroundSize: '500px 440px',
-                backgroundPosition: '10% center',
+                backgroundSize: '750px 440px',
+                backgroundPosition: '15% center',
             },
             descricao: '(Desconjuração Início)',
         },

@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './CardArthur.css';  // Você pode criar o arquivo CSS com os estilos do Arthur
-import { ConteudoBox, ConteudoCard, VejaMais } from './CardArthurStyle'; // Defina os estilos para o Arthur
+import './CardArthur.css';
+import { ConteudoBox, ConteudoCard, VejaMais } from './CardArthurStyle';
 import Card from '../card/Card';
 
-import img1 from '../../img/1.jpg';  // Substitua com a imagem real
-import img2 from '../../img/3.gif'; // Substitua com a imagem real
-import img3 from '../../img/2.jpg'; // Substitua com a imagem real
+import img1 from '../../img/1.jpg';
+import img2 from '../../img/3.gif';
+import img3 from '../../img/2.jpg';
 
 function CardArthur() {
     const imagens = [

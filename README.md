@@ -17,7 +17,7 @@ Atualmente, o projeto inclui os seguintes personagens:
 - Elizabeth Webber // AINDA NÃO ADICIONADO
 - Thiago Fritz // AINDA NÃO ADICIONADO
 - Dante
-- Anfitrião // AINDA NÃO ADICIONADO
+- O Anfitrião
 - Deus da Morte // AINDA NÃO ADICIONADO
 
 Mais personagens serão adicionados assim que o processo de componentização for finalizado.

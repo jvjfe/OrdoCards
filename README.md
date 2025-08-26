@@ -14,6 +14,7 @@ Atualmente, o projeto inclui os seguintes personagens:
 - Arthur Cervero
 - Joui Jouki
 - Kaiser (Cesar Cohen)
+- Kian
 - Elizabeth Webber // AINDA NÃO ADICIONADO
 - Thiago Fritz // AINDA NÃO ADICIONADO
 - Dante

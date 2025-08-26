@@ -4,6 +4,7 @@ import CardArthur from "./components/cardArthur/CardArthur.js";
 import CardKaiser from "./components/cardKaiser/CardKaiser.js";
 import CardDante from "./components/cardDante/CardDante.js";
 import CardAnfitriao from "./components/cardAnfitriao/CardAnfitriao.js";
+import CardKian from "./components/cardKian/CardKian.js";
 import Header from "./components/header/Header.js";
 import Footer from "./components/footer/Footer.js";
 import './index.css';
@@ -28,6 +29,7 @@ function App() {
         <CardKaiser />
         <CardDante />
         <CardAnfitriao />
+        <CardKian />
       </div>
       <section id="sobre" className="sobre-bloco">
         <h2>Sobre o Projeto</h2>

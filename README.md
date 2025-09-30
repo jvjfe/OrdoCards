@@ -40,7 +40,7 @@ Mais personagens serão adicionados assim que o processo de componentização fo
 
 2. Navegue até a pasta do projeto:
    ```bash
-   cd OrdemParanormalCards2.0
+   cd OrdoCards
    ```
 
 3. Instale as dependências:

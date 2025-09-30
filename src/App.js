@@ -5,6 +5,7 @@ import CardKaiser from "./components/cardKaiser/CardKaiser.js";
 import CardDante from "./components/cardDante/CardDante.js";
 import CardAnfitriao from "./components/cardAnfitriao/CardAnfitriao.js";
 import CardKian from "./components/cardKian/CardKian.js";
+import CardMagistrada from "./components/cardMagistrada/CardMagistrada.js";
 import Header from "./components/header/Header.js";
 import Footer from "./components/footer/Footer.js";
 import './index.css';
@@ -29,6 +30,7 @@ function App() {
         <CardKaiser />
         <CardDante />
         <CardAnfitriao />
+        <CardMagistrada />
         <CardKian />
       </div>
       <section id="sobre" className="sobre-bloco">

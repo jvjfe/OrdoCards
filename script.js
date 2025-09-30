@@ -1,17 +1,15 @@
-let prevScrollPos = window.pageYOffset; // Armazena a posição de rolagem anterior
-const header = document.querySelector('header'); // Seleciona o elemento header
+let prevScrollPos = window.pageYOffset;
+const header = document.querySelector('header');
 
 window.onscroll = function () {
-    let currentScrollPos = window.pageYOffset; // Posição de rolagem atual
+    let currentScrollPos = window.pageYOffset;
 
-    // Se a rolagem for para baixo, diminui a opacidade do header
     if (prevScrollPos < currentScrollPos) {
-        header.style.opacity = "0"; // Diminui a opacidade (desaparece)
+        header.style.opacity = "0";
     } else {
-        header.style.opacity = "1"; // Aumenta a opacidade (volta a aparecer)
+        header.style.opacity = "1";
     }
 
-    // Atualiza a posição de rolagem anterior
     prevScrollPos = currentScrollPos;
 }
 
@@ -21,19 +19,19 @@ window.onscroll = function () {
 function trocarImagem(event) {
     var imgElement = document.getElementById('kaiser-ft');
     var conteudoCard = document.querySelector('.conteudo-card3');
-    var clickX = event.clientX - imgElement.getBoundingClientRect().left; // Posição X do clique em relação à imagem
+    var clickX = event.clientX - imgElement.getBoundingClientRect().left;
 
     if (clickX < imgElement.offsetWidth / 3) {
-        imgElement.style.backgroundImage = "url('img/7.jpg')"; // Clique à esquerda
+        imgElement.style.backgroundImage = "url('img/7.jpg')";
         imgElement.style.backgroundSize = "120%";
         conteudoCard.textContent = "(Segredo na Floresta)";
     } else if (clickX < imgElement.offsetWidth * 2 / 3) {
-        imgElement.style.backgroundImage = "url('img/9.gif')"; // Clique no meio
+        imgElement.style.backgroundImage = "url('img/9.gif')";
         imgElement.style.backgroundSize = "auto 420px";
         conteudoCard.textContent = "(Desconjuração Final)";
     } else {
-        imgElement.style.backgroundImage = "url('img/8.png')"; // Clique à direita
-        imgElement.style.backgroundSize = "117%"; // Tamanho menor
+        imgElement.style.backgroundImage = "url('img/8.png')";
+        imgElement.style.backgroundSize = "117%";
         conteudoCard.textContent = "(Desconjuração Início)";
     }
 }

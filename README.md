@@ -19,6 +19,7 @@ Atualmente, o projeto inclui os seguintes personagens:
 - Thiago Fritz // AINDA NÃO ADICIONADO
 - Dante
 - O Anfitrião
+- A Magistrada
 - Deus da Morte // AINDA NÃO ADICIONADO
 
 Mais personagens serão adicionados assim que o processo de componentização for finalizado.

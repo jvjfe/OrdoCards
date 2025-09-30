@@ -19,7 +19,7 @@ function CardMagistrada() {
     return (
         <div className="card-container">
             <div
-                className="card-anfitriao"
+                className="card-magistrada"
                 style={imagem.estilo}
             >
                 <Card

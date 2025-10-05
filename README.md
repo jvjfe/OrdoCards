@@ -20,7 +20,8 @@ Atualmente, o projeto inclui os seguintes personagens:
 - Dante
 - O Anfitrião
 - A Magistrada
-- Deus da Morte // AINDA NÃO ADICIONADO
+- Deus da Morte
+- O Diabo
 
 Mais personagens serão adicionados assim que o processo de componentização for finalizado.
 

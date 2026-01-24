@@ -1,6 +1,6 @@
 # OrdoCards
 
-OrdoCards é um site interativo que apresenta cartas de personagens da série *Ordem Paranormal*, com efeitos em neon e 3D. O projeto está em constante evolução e atualmente passa por um processo de componentização, utilizando React. 
+OrdoCards é um site interativo que apresenta cartas de personagens da série *Ordem Paranormal*, com efeitos em neon e 3D. O projeto está finalizado, se utilizar o código para algum projeto, favor dar os créditos a Jvjfe.
 
 ## Funcionalidades
 
@@ -15,8 +15,6 @@ Atualmente, o projeto inclui os seguintes personagens:
 - Joui Jouki
 - Kaiser (Cesar Cohen)
 - Kian
-- Elizabeth Webber // AINDA NÃO ADICIONADO
-- Thiago Fritz // AINDA NÃO ADICIONADO
 - Dante
 - O Anfitrião
 - A Magistrada
@@ -27,7 +25,7 @@ Mais personagens serão adicionados assim que o processo de componentização fo
 
 ## Tecnologias Utilizadas
 
-- **HTML** - Estruturação do conteúdo. (HTML está sendo removido aos poucos da página, será trocado pelo React com Styled Components.)
+- **HTML** - Versão Legado.
 - **CSS** - Estilização e efeitos visuais.
 - **JavaScript** - Lógica e interação.
 - **React** - Componentização da interface e melhorias de performance.
@@ -61,7 +59,7 @@ Mais personagens serão adicionados assim que o processo de componentização fo
 
 ## Contribuições
 
-O projeto está em andamento e contribuições são bem-vindas! Se você tiver sugestões de melhorias ou novos personagens para adicionar, sinta-se à vontade para enviar em meu discord: https://discord.gg/8vtcXEn 
+O projeto está finalizado, caso queira conversar com o criador, sinta-se à vontade para enviar em meu discord: https://discord.gg/8vtcXEn
 
 
 ## Licença

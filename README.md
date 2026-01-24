@@ -10,7 +10,7 @@ OrdoCards é um site interativo que apresenta cartas de personagens da série *O
 
 ## Personagens Adicionados
 
-Atualmente, o projeto inclui os seguintes personagens:
+ O projeto inclui os seguintes personagens:
 - Arthur Cervero
 - Joui Jouki
 - Kaiser (Cesar Cohen)
@@ -20,8 +20,6 @@ Atualmente, o projeto inclui os seguintes personagens:
 - A Magistrada
 - Deus da Morte
 - O Diabo
-
-Mais personagens serão adicionados assim que o processo de componentização for finalizado.
 
 ## Tecnologias Utilizadas
 
